@@ -57,17 +57,16 @@ export default function PomodoroTimer() {
 
   return (
     <div style={{
-      minHeight: "100vh",
-      background: flash ? current.color : "#050d1a",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-      fontFamily: "'Segoe UI', system-ui, sans-serif",
-      color: "#e0eaff",
-      transition: "background 0.1s",
-      userSelect: "none",
-    }}>
+    minHeight: "100vh",
+    boxSizing: "border-box",
+    background: flash ? current.color : "#050d1a",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "24px",
+    userSelect: "none",
+  }}>
 
       <div style={{ display: "flex", gap: "2px", marginBottom: "48px" }}>
         {Object.entries(MODES).map(([key, val]) => (
