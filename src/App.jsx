@@ -66,7 +66,6 @@ export default function PomodoroTimer() {
       fontFamily: "'Segoe UI', system-ui, sans-serif",
       color: "#e0eaff",
       transition: "background 0.1s",
-      padding: "24px",
       userSelect: "none",
     }}>
 
